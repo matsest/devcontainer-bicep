@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json?WT.mc_id=DT-MVP-5003035.
+{
+	"name": "Bicep",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	
+	// Any default configuration settings needed
+	"settings": {},
+
+    // The most important extensions for Bicep Development
+	"extensions": [
+		"ms-dotnettools.vscode-dotnet-runtime",
+		"ms-vscode.azure-account",
+		"ms-azuretools.vscode-bicep",
+		"msazurermtools.azurerm-vscode-tools",
+
+		// Some other helpful extensions that can be included (but are not required)
+		"redhat.vscode-yaml",
+		"ms-azuretools.vscode-docker",
+		"editorconfig.editorconfig",
+		"ms-vscode.powershell",
+		"alefragnani.Bookmarks",
+		"heaths.vscode-guid"
+	],
+
+    // It can be helpful to restrict the total memory consumed by the container to avoid situations
+    // where the Bicep extension consumes all available memory. The downside to this is that the container
+    // may suddenly halt and need to restart in these situations.
+	"runArgs": [
+		"--memory=1.2g"
+	],
+
+	// Run the container using a non-root account
+	"remoteUser": "vscode"
+}

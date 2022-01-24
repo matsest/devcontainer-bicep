@@ -1,0 +1,4 @@
+# Style settings for this project
+[*.bicep]
+indent_style = space
+indent_size = 2
