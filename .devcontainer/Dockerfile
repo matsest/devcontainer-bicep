@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/vscode/devcontainers/dotnet:6.0
+FROM mcr.microsoft.com/vscode/devcontainers/dotnet:7.0
 
 ARG BICEP_VERSION=latest
-ARG POWERSHELL_VERSION=7.2.0
+ARG POWERSHELL_VERSION=7.3.3
 
 # Install PowerShell and  Azure CLI [requires elevated permissions]
 RUN dotnet tool install -g powershell --version $POWERSHELL_VERSION \
